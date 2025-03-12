@@ -13,7 +13,7 @@ def load(data_frames: Dict[str, DataFrame], database: Engine):
     """
     for table_name, df in data_frames.items():
         df.to_sql(name=table_name, con=database, if_exists="replace", index=False)
-        print(f"✅ Tabla '{table_name}' cargada con éxito.")
+        print(f"Tabla '{table_name}' cargada con éxito.")
     # TODO: Implementa esta función. Por cada DataFrame en el diccionario, debes
     # usar pandas.DataFrame.to_sql() para cargar el DataFrame en la base de datos
     # como una tabla.
